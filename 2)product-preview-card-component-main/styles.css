@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Fraunces",serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    max-width: 666px;
+    margin: 0 16px;
+    border-radius: 10px;
+}
+
+/* Image */
+.img_container{
+    width: 50%; /*50% img*/
+}
+.img_container img{
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+/* details and text */
+
+.details_container{
+    width: 50%;/*50% text*/
+    padding: 32px;/*push the text from img*/
+}
+
+.details_container .name{
+    color: hsl(212, 21%, 14%);
+    padding-right: 16px;
+    margin-bottom: 24px;
+    font-family: "Fraunces" serif;
+}
+.details_container .description{
+    font-family: "Montserrat";
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 24px;
+}
+ .montserrat{
+    font-family: 'Montserrat';
+    letter-spacing: 3px;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 24px;
+ }
+
+ /* Price */
+ .price-container{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 1.75rem;
+ }
+
+ .price-container .current_price{
+    color: hsl(158,20%,48%);
+ }
+
+ .price-container .old_price{
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+ }
+
+ /* Button */
+
+ .details_container .btn{
+    width: 100%; /*makes 100% in 50% text*/
+    border: 0;
+    outline: 0;
+    background-color: hsl(158, 20%, 48%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 24px 48px;
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    cursor: pointer;
+ }
+ .details_container .btn:hover{
+    background-color:  hsl(212, 21%, 14%);;
+ }
